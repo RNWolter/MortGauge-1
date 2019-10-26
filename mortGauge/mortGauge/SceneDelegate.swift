@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  mortgage calculator
+//  mortGauge
 //
-//  Created by Thomas Sabino-Benowitz on 10/22/19.
+//  Created by Thomas Sabino-Benowitz on 10/23/19.
 //  Copyright © 2019 Lambda School. All rights reserved.
 //
 

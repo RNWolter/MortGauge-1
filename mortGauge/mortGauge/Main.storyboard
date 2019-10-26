@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vHD-f3-jxp">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="jo0-FE-3dQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ole-XB-vqC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KE0-vJ-w0F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXv-d4-dgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.768115942029" y="144.64285714285714"/>
+        </scene>
+        <!--Mort Gauge View Controller-->
+        <scene sceneID="L1b-Xu-jRo">
+            <objects>
+                <viewController id="vHD-f3-jxp" customClass="MortGaugeViewController" customModule="mortGauge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kCS-z4-pRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULK-aA-fNN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0M-wg-Ulq" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="937"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2B-IF-cd7">
+                                                <rect key="frame" x="207" y="8" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0s-LN-JeU">
+                                                <rect key="frame" x="207" y="469" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbN-wF-fVO">
+                                                <rect key="frame" x="207" y="918" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bG5-A2-xJk">
+                                                <rect key="frame" x="27" y="249.5" width="360" height="438"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Price" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdC-1N-Cgl">
+                                                        <rect key="frame" x="124" y="0.0" width="112" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGG-nx-XTm">
+                                                        <rect key="frame" x="100" y="46" width="160" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="EEZ-qy-IJp"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Down Payment" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUj-C2-lFb">
+                                                        <rect key="frame" x="107.5" y="104" width="145" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H45-fR-S8l">
+                                                        <rect key="frame" x="100" y="150" width="160" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="fsg-Pv-wlS"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mortgage Term: Years" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctY-qb-q63">
+                                                        <rect key="frame" x="78" y="208" width="204" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xin-EG-bOk">
+                                                        <rect key="frame" x="0.0" y="254" width="360" height="80"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="5U9-MG-AQw"/>
+                                                            <constraint firstAttribute="width" constant="360" id="Yzw-8D-JvP"/>
+                                                        </constraints>
+                                                    </pickerView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Rate %" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Usi-XN-ITt">
+                                                        <rect key="frame" x="106" y="358" width="148.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbj-A0-Q2n">
+                                                        <rect key="frame" x="100" y="404" width="160" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="PBL-xh-hm2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vkY-Kj-SIZ">
+                                                <rect key="frame" x="33.5" y="813" width="347" height="110"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="6Mm-F7-kbT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="347" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Insurance :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-qX-2pO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="134" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQc-tL-FAs">
+                                                                <rect key="frame" x="227" y="0.0" width="120" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="120" id="McO-rP-fUD"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="94" translatesAutoresizingMaskIntoConstraints="NO" id="B2E-Bm-BRa">
+                                                        <rect key="frame" x="0.0" y="38" width="347" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Property Tax /yr :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-0a-1Li">
+                                                                <rect key="frame" x="0.0" y="0.0" width="133" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="faU-22-TDW">
+                                                                <rect key="frame" x="227" y="0.0" width="120" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="120" id="F9H-Bn-hzQ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="169" translatesAutoresizingMaskIntoConstraints="NO" id="UC2-Zg-PXw">
+                                                        <rect key="frame" x="0.0" y="76" width="347" height="34"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOA :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpc-dG-trI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="58" height="34"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxG-nm-rpM">
+                                                                <rect key="frame" x="227" y="0.0" width="120" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="120" id="QI9-md-9gX"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Monthly Payment: " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6v-qw-tGN">
+                                                <rect key="frame" x="121" y="743.5" width="172" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvZ-kB-vmV">
+                                                <rect key="frame" x="207" y="785.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRj-I6-epS">
+                                                <rect key="frame" x="152.5" y="695.5" width="109" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Calculate!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="calculateButton:" destination="vHD-f3-jxp" eventType="touchUpInside" id="8HO-1O-7k9"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mortgauge" translatesAutoresizingMaskIntoConstraints="NO" id="Rm1-ci-wgf">
+                                                <rect key="frame" x="48" y="-330" width="318" height="938"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="bG5-A2-xJk" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="6hI-da-OwO"/>
+                                            <constraint firstItem="T6v-qw-tGN" firstAttribute="top" secondItem="PRj-I6-epS" secondAttribute="bottom" constant="6" id="ACt-eg-MMe"/>
+                                            <constraint firstItem="BbN-wF-fVO" firstAttribute="top" secondItem="vkY-Kj-SIZ" secondAttribute="bottom" constant="-5" id="G3b-0B-x2b"/>
+                                            <constraint firstAttribute="bottom" secondItem="BbN-wF-fVO" secondAttribute="bottom" constant="19" id="MQJ-jX-0Z8"/>
+                                            <constraint firstItem="Rm1-ci-wgf" firstAttribute="top" secondItem="h0M-wg-Ulq" secondAttribute="top" constant="-330" id="PJZ-PT-q1v"/>
+                                            <constraint firstAttribute="trailing" secondItem="Rm1-ci-wgf" secondAttribute="trailing" constant="48" id="POL-Zb-Q3P"/>
+                                            <constraint firstItem="T6v-qw-tGN" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="RsG-3z-KID"/>
+                                            <constraint firstItem="vkY-Kj-SIZ" firstAttribute="top" secondItem="T6v-qw-tGN" secondAttribute="bottom" constant="50" id="US9-Uc-Aat"/>
+                                            <constraint firstItem="vkY-Kj-SIZ" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="Vga-SD-2jZ"/>
+                                            <constraint firstItem="v2B-IF-cd7" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="WF0-v4-NUM"/>
+                                            <constraint firstItem="Y0s-LN-JeU" firstAttribute="top" secondItem="v2B-IF-cd7" secondAttribute="bottom" constant="461" id="boP-2s-yzw"/>
+                                            <constraint firstItem="BbN-wF-fVO" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="hai-sD-T48"/>
+                                            <constraint firstItem="bG5-A2-xJk" firstAttribute="centerY" secondItem="h0M-wg-Ulq" secondAttribute="centerY" id="iw7-6e-JeU"/>
+                                            <constraint firstItem="BbN-wF-fVO" firstAttribute="top" secondItem="FvZ-kB-vmV" secondAttribute="bottom" constant="132.66999999999999" id="mug-ml-WWe"/>
+                                            <constraint firstItem="FvZ-kB-vmV" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="nQH-9d-u5o"/>
+                                            <constraint firstItem="PRj-I6-epS" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="pdh-lQ-nNj"/>
+                                            <constraint firstItem="Rm1-ci-wgf" firstAttribute="leading" secondItem="h0M-wg-Ulq" secondAttribute="leading" constant="48" id="qf7-lg-5Nq"/>
+                                            <constraint firstItem="BbN-wF-fVO" firstAttribute="top" secondItem="Y0s-LN-JeU" secondAttribute="bottom" constant="449" id="vEZ-GT-xD2"/>
+                                            <constraint firstItem="Y0s-LN-JeU" firstAttribute="centerX" secondItem="h0M-wg-Ulq" secondAttribute="centerX" id="vmC-4U-Ccs"/>
+                                            <constraint firstItem="v2B-IF-cd7" firstAttribute="top" secondItem="h0M-wg-Ulq" secondAttribute="top" constant="8" id="wHN-9t-QXR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h0M-wg-Ulq" firstAttribute="leading" secondItem="ULK-aA-fNN" secondAttribute="leading" id="9Ap-eT-Q7F"/>
+                                    <constraint firstAttribute="trailing" secondItem="h0M-wg-Ulq" secondAttribute="trailing" id="EZq-7Z-Ayq"/>
+                                    <constraint firstItem="h0M-wg-Ulq" firstAttribute="width" secondItem="ULK-aA-fNN" secondAttribute="width" id="J34-2g-6Iq"/>
+                                    <constraint firstItem="h0M-wg-Ulq" firstAttribute="top" secondItem="ULK-aA-fNN" secondAttribute="top" id="UJF-Wh-sqm"/>
+                                    <constraint firstAttribute="bottom" secondItem="h0M-wg-Ulq" secondAttribute="bottom" id="Vd3-RY-lrq"/>
+                                    <constraint firstItem="h0M-wg-Ulq" firstAttribute="height" secondItem="ULK-aA-fNN" secondAttribute="height" priority="250" id="ohX-yz-csq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Muc-Nq-deh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fl4-gw-bzN"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bCf-P0-xXv" firstAttribute="bottom" secondItem="ULK-aA-fNN" secondAttribute="bottom" id="Ioc-bQ-RJ2"/>
+                            <constraint firstItem="ULK-aA-fNN" firstAttribute="top" secondItem="bCf-P0-xXv" secondAttribute="top" id="N2m-OT-sTC"/>
+                            <constraint firstItem="bCf-P0-xXv" firstAttribute="trailing" secondItem="ULK-aA-fNN" secondAttribute="trailing" id="cml-gz-rUo"/>
+                            <constraint firstItem="ULK-aA-fNN" firstAttribute="leading" secondItem="bCf-P0-xXv" secondAttribute="leading" id="miM-yL-jpO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bCf-P0-xXv"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="HOATextField" destination="fxG-nm-rpM" id="dKz-Ic-gfb"/>
+                        <outlet property="calculationResultLabel" destination="FvZ-kB-vmV" id="Hgn-zU-EOh"/>
+                        <outlet property="downPaymentTextField" destination="H45-fR-S8l" id="gxU-Tx-kVK"/>
+                        <outlet property="homePriceTextField" destination="AGG-nx-XTm" id="m5k-LT-3La"/>
+                        <outlet property="insuranceTextField" destination="zQc-tL-FAs" id="dg6-wD-mnA"/>
+                        <outlet property="interestRateTextField" destination="Jbj-A0-Q2n" id="cwF-kD-d9V"/>
+                        <outlet property="taxesTextField" destination="faU-22-TDW" id="knQ-Bq-PYS"/>
+                        <outlet property="termPickerView" destination="Xin-EG-bOk" id="TCG-xZ-n96"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3kC-hs-Wq9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833.33333333333337" y="150"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mortgauge" width="1397" height="938"/>
+    </resources>
+</document>
